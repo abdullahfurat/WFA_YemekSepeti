@@ -97,6 +97,8 @@
     <Content Include="Resources\icon-ui-1-close-512.png" />
     <Content Include="Resources\iconfinder_check_2561355.png" />
     <Content Include="Resources\iconfinder_Close_1031533.png" />
+    <None Include="Resources\s-85c3ef831d3e50fc125ae32e15366ea4000bc743.jpg" />
+    <None Include="Resources\nohutlu-pilav.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

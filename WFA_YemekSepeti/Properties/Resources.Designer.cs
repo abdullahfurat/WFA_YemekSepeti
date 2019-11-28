@@ -89,5 +89,25 @@ namespace WFA_YemekSepeti.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nohutlu_pilav {
+            get {
+                object obj = ResourceManager.GetObject("nohutlu-pilav", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap s_85c3ef831d3e50fc125ae32e15366ea4000bc743 {
+            get {
+                object obj = ResourceManager.GetObject("s-85c3ef831d3e50fc125ae32e15366ea4000bc743", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
