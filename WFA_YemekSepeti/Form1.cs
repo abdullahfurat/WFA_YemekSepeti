@@ -34,7 +34,7 @@ namespace WFA_YemekSepeti
         {
 
             int result = 0;
-            bool sonuc = int.TryParse(item.Text, out result);
+            bool sonuc = int.TryParse(item.Text.Replace(".",""), out result);
           
              if (item2.SelectedIndex < 0)
             {
@@ -120,7 +120,7 @@ namespace WFA_YemekSepeti
             }
             else
             {
-                metroLabel6.Text = (int.Parse(textBox1.Text) * fiyatbul(cmbBirinciYemek) + int.Parse(textBox2.Text) * fiyatbul(cmbIkinciYemek)).ToString();
+                metroLabel6.Text = (float.Parse(textBox1.Text) * fiyatbul(cmbBirinciYemek) + float.Parse(textBox2.Text) * fiyatbul(cmbIkinciYemek)).ToString();
             }
             
 
@@ -133,7 +133,13 @@ namespace WFA_YemekSepeti
             pictureBox1.Image = null;
             pictureBox2.Image = null;
             cmbBirinciYemek.SelectedIndex = cmbIkinciYemek.SelectedIndex= - 1;
+            metroLabel6.Text = "0 TL";
             MessageBox.Show("Siparişiniz iptal edilmiştir.");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
